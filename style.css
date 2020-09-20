@@ -1,0 +1,118 @@
+
+
+body{
+    background-color: rgb(51, 57, 65);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* This is all for the navgation bar and drop meun */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(8, 8, 8, 0.555);
+  font-family: 'Courier New', Courier, monospace;
+ 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(15, 15, 15, 0.39);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000c4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(100, 98, 98, 0.596);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+
+
+  /* for the lists */
+
+  .loc-caption:before {
+    content: attr(title);
+    display: block;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 20px;
+   color: white;
+   padding: 5%;
+  }
+  
+  ul {
+    text-align: center;
+    padding: 10px;
+    overflow-x: auto;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    
+
+  }
+  
+  li {
+    width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    padding : 1%;
+
+  }
+  
+  li img {
+  
+    height: 320px;
+    width: 200px;
+    padding: 1%;
+  }
+
+  

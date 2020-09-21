@@ -10,6 +10,7 @@ body{
     margin-right: auto;
     
 }
+
 /* This is all for the navgation bar and drop meun */
 .navbar {
   overflow: hidden;
@@ -69,7 +70,7 @@ body{
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(100, 98, 98, 0.596);
+  background-color: rgba(194, 191, 191, 0.596);
 }
 
 .dropdown:hover .dropdown-content {
@@ -115,4 +116,39 @@ body{
     padding: 1%;
   }
 
+  /* for the text animation */
+
+p {
+  border-right: solid 5px rgba(226, 223, 223, 0.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
   
+}
+
+/* Animation */
+p {
+  animation: animated-text 3s linear 1s 1 normal both,
+             animated-cursor 600ms linear infinite;
+}
+
+/* text animation */
+
+ @keyframes animated-text{
+  from{width: 0;}
+  to{width: 210px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+} 
+
+
+
+
+

@@ -7,9 +7,10 @@ html, body {
 body{
     
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(-45deg, #1a182ead, #13112ce8, #271bd665, #0c0480);
+    background: linear-gradient(-45deg, #353c81cc, #5a3c6de0, #6c3daacb, #320ae4ec);
     background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
+    animation: gradient 10s ease infinite;
+    transition:all 0.1s ease;
 }
 .center {
     display: block;
@@ -17,6 +18,7 @@ body{
     margin-right: auto;
     
 }
+
 @keyframes gradient {
   0% {
       background-position: 0% 50%;
@@ -61,10 +63,12 @@ body{
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgba(15, 15, 15, 0.39);
+  
 }
 
 .dropdown-content {
@@ -75,6 +79,7 @@ body{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-family: 'Courier New', Courier, monospace;
+ 
 }
 
 .dropdown-content a {
@@ -84,15 +89,18 @@ body{
   text-decoration: none;
   display: block;
   text-align: left;
-  
+ 
 }
 
 .dropdown-content a:hover {
   background-color: rgba(194, 191, 191, 0.596);
+  
 }
 
 .dropdown:hover .dropdown-content {
-  display: block; }
+  display: block;
+ 
+ }
 
 
 
@@ -142,19 +150,16 @@ p {
   overflow: hidden;    
   font-family: 'Courier New', Courier, monospace; 
   font-size: 28px;
-  color: rgba(15, 10, 65, 0.7);
-  
-  
+  color: rgba(7, 7, 7, 0.493);
+  padding: 10px;
+ 
 }
 
-/* Animation */
 p {
   animation: animated-text 3s linear 1s 1 normal both,
              animated-cursor 600ms linear infinite;
-             
+                     
 }
-
-/* text animation */
 
  @keyframes animated-text{
   from{width: 0;}
@@ -162,13 +167,13 @@ p {
   
 }
 
-/* cursor animations */
-
 @keyframes animated-cursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 } 
 
 
-/* for the background */
+/* for the css transtion */
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
